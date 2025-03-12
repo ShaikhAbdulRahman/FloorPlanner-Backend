@@ -12,9 +12,9 @@ app.use(cors());
 connectDB();
 const PORT = process.env.PORT || 8000;
 
-app.get('/', (req, res) => {
-  res.send('Floor Planner API is running');
-});
+app.get("/",(req,res)=>{
+  res.json("Hello")
+})
 
 app.use('/api/floorplan', floorplanRoutes);
 
